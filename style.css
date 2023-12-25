@@ -922,40 +922,39 @@ html, body {
 /* ... existing CSS code ... */
 
 /* Tab Bar Styles */
+/* Tab Bar Styles */
 .tab {
-  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
-  white-space: nowrap; /* Prevent tabs from wrapping */
+  position: sticky;
+  top: 0;
   background-color: #4a90e2;
   border-bottom: 2px solid #327ab7;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   z-index: 1;
 }
 
 .tab button {
   background-color: inherit;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 16px 18px; /* Adjusted padding */
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 20px; /* Increased font size */
   color: #fff;
-  white-space: nowrap; /* Prevent button text from wrapping */
-  display: inline-block; /* Display buttons in a line */
-  margin-right: 10px; /* Add space between buttons */
 }
 
 .tabcontent {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto; /* Enable vertical scrolling for content */
-  padding: 20px; /* Add padding to the content */
+  /* Removed position: absolute; */
+  margin-top: 50px; /* Added margin-top to push content below the tab bar */
+  padding-top: 20px; /* Added padding-top to separate content from tab bar */
+  background-color: #e6f7ff; /* Added background-color to match body background */
+  overflow: auto; /* Added overflow property to enable scrolling if content exceeds screen height */
 }
 
+/* Ensure that the tab content does not cover the tab bar */
+@media (max-width: 767px) {
+  .tabcontent {
+    margin-top: 150px; /* Increase margin-top for smaller screens */
+  }
+}
 
