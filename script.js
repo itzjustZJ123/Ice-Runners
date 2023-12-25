@@ -40,3 +40,10 @@ function showDescriptionTab() {
 
 // Call the function to show the Description tab when the page loads
 window.addEventListener('load', showDescriptionTab);
+// Function to display the Description tab initially
+function showDescriptionTab() {
+  openTab(event, 'Description');
+}
+
+// Attach the showDescriptionTab function to the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', showDescriptionTab);
