@@ -1,0 +1,232 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Website</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <div id="usernamePopup" class="username-popup">
+    <div class="username-content">
+      <h2>Welcome!</h2>
+      <p>Please enter your username to continue:</p>
+      <input type="text" id="usernameInput" placeholder="Username">
+      <button id="submitUsername">Submit</button>
+    </div>
+  </div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Description')">Description</button>
+  <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
+  <button class="tablinks" onclick="openTab(event, 'Ratings')">Ratings</button>
+  <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
+</div>
+
+  <div id="Description" class="tabcontent">
+    <h3 class="section-title">Ice Runners VR: Customize, Play, and Connect!</h3>
+    <div class="description-content">
+      <p class="intro-paragraph">
+        In the world of <span class="game-title">"Ice Runners VR,"</span> we invite you to embark on an extraordinary social adventure that's tailored to your unique spirit. Immerse yourself in thrilling Arctic escapades while forging bonds with friends and fellow players from all corners of the globe.
+      </p>
+      <div class="feature">
+        <h4 class="feature-title">Cosmetics, Your Identity</h4>
+        <p class="feature-description">
+          Unleash your creativity by mixing and matching cosmetics to craft a persona that's unmistakably you. Stand out in style, allowing your personality to radiate as you traverse the icy landscapes on your Arctic odyssey.
+        </p>
+      </div>
+      <div class="feature">
+        <h4 class="feature-title">Multiplayer Moments</h4>
+        <p class="feature-description">
+          "Ice Runners VR" promises an array of heart-pounding multiplayer games. Engage in exhilarating challenges, from the adrenaline-fueled Tag to the pulse-pounding intensity of the Rising Lava mode. Forge unbreakable connections with friends, as you create indelible memories in the breathtaking Arctic wilderness.
+        </p>
+      </div>
+      <p class="conclusion-paragraph">
+        "Ice Runners VR" transcends mere gaming; it's a dynamic social platform that unites people for unforgettable multiplayer adventures. Customize your journey, partake in thrilling games, and connect with friends and players spanning the globe. Dive headfirst into the Arctic, where friendships are cemented, and endless fun awaits!
+      </p>
+    </div>
+  </div>
+
+
+    <!-- Add your images with varying sizes here -->
+    <div id="Gallery" class="tabcontent">
+      <h3 class="section-title">Image Gallery</h3>
+      <div class="gallery-content">
+        <img src="https://th.bing.com/th/id/R.58f23082e069146e8519990470e61f59?rik=JGCXZIn%2f44vFUA&pid=ImgRaw&r=0" alt="Image 1" class="gallery-image">
+        <img src="https://th.bing.com/th/id/R.58f23082e069146e8519990470e61f59?rik=JGCXZIn%2f44vFUA&pid=ImgRaw&r=0" alt="Image 2" class="gallery-image">
+        <img src="https://th.bing.com/th/id/R.58f23082e069146e8519990470e61f59?rik=JGCXZIn%2f44vFUA&pid=ImgRaw&r=0" alt="Image 3" class="gallery-image">
+        <img src="https://th.bing.com/th/id/R.58f23082e069146e8519990470e61f59?rik=JGCXZIn%2f44vFUA&pid=ImgRaw&r=0" alt="Image 4" class="gallery-image">
+        <!-- Add more images here -->
+      </div>
+    </div>
+
+  <div id="Ratings" class="tabcontent">
+
+    <h3 class="section-title">Ratings</h3>
+
+    <div class="rating-container" id="ratingContainer">
+      <!-- Sample initial ratings with random usernames -->
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Jakob One Shot</p>
+        <p>Excellent work!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">That Gorilla Tag Kid</p>
+        <p>Great job!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">VR_enthusiast</p>
+        <p>Woah, mind-blown! Graphics are next level.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Arctic_Explorer</p>
+        <p>Feels like I'm really in the Arctic! Props to the team!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">GamerGal</p>
+        <p>Having a blast! Multiplayer rocks!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">PenguinPal</p>
+        <p>So much fun! Arctic theme is lit!</p>
+      </div>
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Tech_Wizard</p>
+        <p>VR is mind-blowing. Tech masterpiece!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+        <p class="username">AdventureSeeker</p>
+        <p>Loving the adventures! More levels, please!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Snow_Lover</p>
+        <p>Snowy landscapes are pure magic!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+        <p class="username">DigitalNomad</p>
+        <p>Great for socializing, UI needs a tweak.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Gaming_Guru</p>
+        <p>Controls are a breeze! Loving it!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Serene_Gamer</p>
+        <p>Chill and fun! Perfect relaxation.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Virtual_Voyager</p>
+        <p>Masterpiece! Attention to detail is crazy.</p>
+      </div>
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Pixel_Painter</p>
+        <p>Art style is lit! Like living in a painting.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Echo_Explorer</p>
+        <p>Sound design is out of this world!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        <p class="username">Mystery_Gamer</p>
+        <p>Storylines got me hooked! Waiting for more!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Arctic_Fox</p>
+        <p>Races are a blast! Competitive yet fun.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+        <p class="username">Casual_Climber</p>
+        <p>Good game, but craving casual modes.</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">World_Traveler</p>
+        <p>Like traveling from my couch! Amazing environments!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Zen_Master</p>
+        <p>Excitement and relaxation in one! Perfect VR!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <p class="username">Challenge_Craver</p>
+        <p>Addicted to the challenges! Can't stop playing!</p>
+      </div>
+
+      <div class="rating">
+        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+        <p class="username">Peaceful_Player</p>
+        <p>Great for unwinding! More peaceful scenes, please.</p>
+      </div>
+
+
+      <!-- Continue adding more as needed -->
+      <!-- Add more ratings with random usernames here -->
+    </div>
+    <div class="add-rating">
+      <select id="ratingStars">
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+      <textarea id="ratingText" placeholder="Enter your review here"></textarea>
+      <button id="addRatingButton">Add Rating</button>
+    </div>
+  </div>
+
+
+  <div id="Links" class="tabcontent">
+    <h3 class="section-title">Useful Links</h3>
+    <div class="links-content">
+      <p class="link">
+        <a href="https://discord.gg/RhcKZADuF3" target="_blank">Join our Discord community</a>
+      </p>
+      <p class="link">
+        <a href="https://www.meta.com/experiences/5621940601265859/" target="_blank">Explore our Meta Experience</a>
+      </p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
