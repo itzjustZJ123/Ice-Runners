@@ -957,4 +957,21 @@ html, body {
     margin-top: 150px; /* Increase margin-top for smaller screens */
   }
 }
+/* Gallery Styles */
+#Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align gallery items */
+  gap: 10px;
+}
+
+.gallery-image {
+  flex: 1;
+  max-width: calc(33.33% - 10px); /* Show 3 images per row on larger screens */
+  width: 100%; /* Ensure images take up full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
 
