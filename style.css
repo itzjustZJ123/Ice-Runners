@@ -87,137 +87,7 @@ body {
 }
 
 
-/* Style for individual ratings */
-.rating {
-  margin-bottom: 20px;
-  border: 1px solid #d6e4ff; /* Soft blue border for ratings */
-  padding: 10px;
-  background-color: #f9f9f9; /* Very light gray background for ratings */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
 
-/* Style for stars */
-.star {
-  color: goldenrod; /* Golden color for stars */
-  font-size: 20px;
-  margin-right: 5px; /* Add some spacing between stars and text */
-}
-
-/* Style for rating text */
-.rating p {
-  margin: 5px 0;
-  font-size: 16px;
-}
-
-/* Enhancements for "Add Rating" section */
-.add-rating {
-  margin-top: 30px;
-  padding: 15px;
-  border-radius: 8px; /* Rounded corners */
-  border: 1px solid #d6e4ff;
-  background-color: #f4f4f8; /* Slightly different background for distinction */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-/* Improved Style for the Rating Stars Dropdown */
-#ratingStars {
-  padding: 8px 10px;
-  font-size: 16px;
-  margin-right: 15px;
-  border: 1px solid #d6e4ff;
-  border-radius: 4px; /* Rounded corners */
-  background-color: white;
-}
-
-/* Enhanced Style for the Rating Text Input */
-#ratingText {
-  width: calc(100% - 20px); /* Full width with padding accounted */
-  padding: 8px 10px;
-  font-size: 16px;
-  border: 1px solid #d6e4ff;
-  border-radius: 4px; /* Rounded corners */
-  background-color: white;
-  margin-bottom: 15px; /* Added bottom margin */
-  resize: vertical; /* Allow vertical resizing only */
-}
-
-/* Improved Style for the "Add Rating" Button */
-#addRatingButton {
-  background-color: #4a90e2; /* Matching blue for the button */
-  color: #fff; /* White text color for the button */
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 4px; /* Rounded corners */
-  display: inline-block; /* Allows the button to have padding and margin */
-  margin-top: 10px;
-}
-
-/* Button Hover Effect */
-#addRatingButton:hover {
-  background-color: #327ab7; /* Darker blue on hover */
-}
-
-/* Style Adjustments for Individual Ratings */
-.rating {
-  margin-bottom: 20px;
-  border: 1px solid #d6e4ff;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* More subtle shadow */
-}
-
-/* Style for Stars */
-.star {
-  color: goldenrod; /* Golden color for stars */
-  font-size: 22px; /* Slightly larger for emphasis */
-  margin-right: 10px; /* Increased spacing */
-}
-
-/* Style for Rating Text */
-.rating p {
-  margin-top: 8px; /* Adjusted top margin */
-  font-size: 16px;
-}
-
-/* Style for the rating stars dropdown */
-#ratingStars {
-  padding: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-/* Style for the rating text input */
-#ratingText {
-  width: 100%;
-  padding: 5px;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Style for the "Add Rating" button */
-#addRatingButton {
-  background-color: #4a90e2; /* Matching blue for the button */
-  color: #fff; /* White text color for the button */
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Change button color on hover */
-#addRatingButton:hover {
-  background-color: #327ab7; /* Darker blue on hover */
-}
-
-/* Style for the "Sign In" pop-up and button */
-.sign-in-popup, .sign-in-popup button {
-  /* ... existing styles ... */
-  background-color: #4a90e2;
   /* Other existing styles */
 }
 
@@ -302,12 +172,7 @@ body {
 /* CSS for Links Section */
 
 /* Section Title */
-#Links .section-title {
-  font-size: 32px;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-}
+
 
 /* Links Content Container */
 #Links .links-content {
@@ -337,85 +202,7 @@ body {
   color: #327ab7;
 }
 /* Style for the Stars and Usernames in Ratings */
-.stars-and-username {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
 
-/* Style for Stars in Ratings */
-.stars-and-username .star {
-  color: goldenrod; /* Golden color for stars */
-  font-size: 20px;
-  margin-right: 5px; /* Add some spacing between stars and username */
-}
-
-/* Style for Usernames in Ratings */
-.stars-and-username .username {
-  font-weight: bold;
-  font-size: 16px;
-}
-/* Updated CSS for the Username Pop-up */
-.username-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-.username-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  width: 60%; /* Adjust this value as needed */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* Add a maximum width to prevent it from stretching too wide */
-}
-
-
-.username-content h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.username-content p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.username-content input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.username-content button {
-  background-color: #4a90e2;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.username-content button:hover {
-  background-color: #327ab7;
-}
-
-.username-popup {
-    display: none;
     /* ... other styles ... */
 }
 /* Style for the Gallery tab content */
@@ -440,3 +227,56 @@ body {
   border-radius: 10px; /* Add rounded corners to the images */
 }
 
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust the height as needed */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style the iframe */
+.custom-iframe {
+  border-radius: 20px; /* Rounded corners */
+  width: 80%; /* Adjust the width as needed */
+  height: 100%; /* Fill the container vertically */
+  border: none;
+}
+/* Style for the Links tab content */
+
+/* Style for the section title */
+#Links .section-title {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style for individual links */
+.link {
+  background-color: #f4f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for link titles */
+.link-title {
+  font-size: 24px;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-title:hover {
+  color: #327ab7;
+}
+
+/* Style for link descriptions */
+.link-description {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}
