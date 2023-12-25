@@ -7,51 +7,11 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #e6f7ff; /* Light blue to mimic a snowy day */
-  color: #333; /* Darker text for better readability */
+  background-color: #e6f7ff;
+  color: #333;
 }
 
-/* Style the tab bar */
-.tab {
-  overflow: hidden;
-  background-color: #4a90e2; /* Lighter blue for the tab bar */
-  border-bottom: 2px solid #327ab7; /* Darker blue for the border */
-}
-
-/* Style the tab buttons */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-  color: #fff; /* White text color for buttons */
-}
-
-/* Change the background color of buttons on hover */
-.tab button:hover {
-  background-color: #327ab7; /* Slightly darker blue on hover */
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #205784; /* Even darker blue for active tab */
-}
-
-/* Style the tab content */
-.tabcontent {
-  position: absolute;
-  top: 50px; /* Height of the tab bar */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: scroll;
-}
-
-/* Style the tab bar */
+/* Tab Bar Styles */
 .tab {
   overflow: hidden;
   background-color: #4a90e2;
@@ -60,10 +20,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1; /* Ensure the tab bar is above other content */
+  z-index: 1;
 }
 
-/* Style the tab buttons */
 .tab button {
   background-color: inherit;
   float: left;
@@ -76,47 +35,48 @@ body {
   color: #fff;
 }
 
-/* Change the background color of buttons on hover */
 .tab button:hover {
   background-color: #327ab7;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #205784;
 }
 
-
-
-  /* Other existing styles */
+/* Tab Content Styles */
+.tabcontent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
 }
-
-/* Snowflake styles */
-/* ... existing snowflake styles ... */
-
-
-/* Snowflakes Container */
 
 /* Keyframes for Snowflake Falling Animation */
 @keyframes fall {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100vh); }
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
 }
 
 /* Snowflake Style with Animation */
 .snowflake {
-  position: absolute;
-  top: -10px;
+  position: fixed; /* Set the position to fixed */
+  top: 0; /* Adjust the initial position */
+  left: 50%; /* Center horizontally */
   color: #fff;
   opacity: 0.8;
   font-size: 1em;
   user-select: none;
-  animation-name: fall;
-  animation-timing-function: linear;
+  animation: fall 5s linear infinite; /* Use the "fall" animation for snowflakes */
 }
-body {
-  overflow: hidden;
-}
+
+
+/* Section Title Styles */
 .section-title {
   font-size: 32px;
   color: #333;
@@ -124,7 +84,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Main Content Container */
+/* Description Content Styles */
 .description-content {
   max-width: 800px;
   margin: 0 auto;
@@ -169,82 +129,25 @@ body {
   line-height: 1.5;
   text-align: justify;
 }
-/* CSS for Links Section */
 
-/* Section Title */
-
-
-/* Links Content Container */
-#Links .links-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Links */
-#Links .link {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#Links .link a {
-  color: #4a90e2;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-#Links .link a:hover {
-  color: #327ab7;
-}
-/* Style for the Stars and Usernames in Ratings */
-
-    /* ... other styles ... */
-}
-/* Style for the Gallery tab content */
-/* Style for the Gallery tab content */
-/* Style for the Gallery tab content */
-/* Style for the Gallery tab content */
+/* Gallery Styles */
 #Gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adjust the gap between images */
-  justify-content: space-between; /* Distribute images evenly across rows */
+  gap: 10px;
+  justify-content: space-between;
 }
 
-/* Style for individual gallery images */
-/* Style for individual gallery images */
 .gallery-image {
   flex: 1;
-  max-width: calc(25% - 10px); /* Set the maximum width for each image (adjust as needed) */
+  max-width: calc(25% - 10px);
   height: auto;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio for each image */
-  border-radius: 10px; /* Add rounded corners to the images */
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
 }
 
-.iframe-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh; /* Adjust the height as needed */
-  overflow: hidden; /* Hide overflowing content */
-}
-
-/* Style the iframe */
-.custom-iframe {
-  border-radius: 20px; /* Rounded corners */
-  width: 80%; /* Adjust the width as needed */
-  height: 100%; /* Fill the container vertically */
-  border: none;
-}
-/* Style for the Links tab content */
-
-/* Style for the section title */
+/* Links Styles */
 #Links .section-title {
   font-size: 32px;
   color: #333;
@@ -252,7 +155,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Style for individual links */
 .link {
   background-color: #f4f4f8;
   border-radius: 10px;
@@ -261,7 +163,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for link titles */
 .link-title {
   font-size: 24px;
   color: #4a90e2;
@@ -273,10 +174,234 @@ body {
   color: #327ab7;
 }
 
-/* Style for link descriptions */
 .link-description {
   font-size: 18px;
   color: #333;
   line-height: 1.5;
   margin-top: 10px;
+}
+
+/* Additional Styles */
+/* ... add other styles here ... */
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+/* Tab Bar Styles */
+.tab {
+  overflow: hidden;
+  background-color: #4a90e2;
+  border-bottom: 2px solid #327ab7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #fff;
+}
+
+.tab button:hover {
+  background-color: #327ab7;
+}
+
+.tab button.active {
+  background-color: #205784;
+}
+
+/* Tab Content Styles */
+.tabcontent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Removed overflow-y: scroll; */
+}
+
+/* Snowflake Styles */
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Snowflake styles */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(360deg);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1em;
+  user-select: none;
+  animation: fall 5s linear infinite;
+  pointer-events: none; /* Prevent snowflakes from affecting clicks */
+}
+
+/* Ensure snowflakes stay away from the sides */
+@media (min-width: 768px) {
+  .snowflake {
+    left: calc(50% - 768px / 2); /* Adjust for your desired content width */
+  }
+}
+
+/* Additional styles for small screens */
+@media (max-width: 767px) {
+  /* Add any specific styles for small screens here */
+}
+
+
+/* Section Title Styles */
+.section-title {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Description Content Styles */
+.description-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Title */
+.game-title {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Introduction Paragraph */
+.intro-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Feature Titles */
+.feature-title {
+  font-size: 24px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+/* Feature Descriptions */
+.feature-description {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Conclusion Paragraph */
+.conclusion-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Gallery Styles */
+#Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  flex: 1;
+  max-width: calc(25% - 10px);
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+/* Links Styles */
+/* Style for the Links tab content */
+/* Style for the Links tab content */
+#Links .links-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for individual links */
+/* Style for individual links */
+.link {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px; /* Add padding for better spacing */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Make the whole button rounded */
+  background-color: #4a90e2; /* Button background color */
+  color: #fff; /* Text color */
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block; /* Display links as inline-block to fit content */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Change cursor to pointer to indicate it's a clickable link */
+}
+
+.link:hover {
+  background-color: #327ab7; /* Change background color on hover */
+  transform: translateY(-3px); /* Add a slight lift effect on hover */
+}
+
+/* Style for link titles */
+.link-title {
+  font-size: 24px;
+  color: #fff; /* Text color for link titles */
+  text-decoration: none; /* Remove underline from link titles */
+  transition: color 0.3s;
+}
+
+.link-title:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Style for link descriptions */
+.link-description {
+  font-size: 18px;
+  color: #fff; /* Text color for link descriptions */
+  line-height: 1.5;
+  margin-top: 10px;
+  text-decoration: none; /* Remove underline from link descriptions */
 }
