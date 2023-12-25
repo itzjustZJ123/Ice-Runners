@@ -919,3 +919,74 @@ html, body {
 .link a:hover .link-title {
   background-color: #327ab7; /* Change background color on hover */
 }
+/* ... existing CSS code ... */
+
+/* Tab Bar Styles */
+.tab {
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  white-space: nowrap; /* Prevent tabs from wrapping */
+  background-color: #4a90e2;
+  border-bottom: 2px solid #327ab7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #fff;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  display: inline-block; /* Display buttons in a line */
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.tabcontent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto; /* Enable vertical scrolling for content */
+  padding: 20px; /* Add padding to the content */
+}
+
+/* Keyframes for Snowflake Falling Animation */
+/* ... existing keyframes ... */
+
+/* Responsive design considerations */
+@media (max-width: 600px) {
+  /* Adjust the font size for smaller screens */
+  body {
+    font-size: 16px;
+  }
+
+  /* Make the tab buttons and content responsive */
+  .tab {
+    overflow-x: scroll;
+  }
+
+  .tab button {
+    font-size: 14px;
+  }
+  
+  /* Adjust the section title font size for consistency */
+  .section-title {
+    font-size: 20px;
+  }
+  
+  /* Adjust the font size for links and descriptions */
+  .link-title,
+  .link-description,
+  .tos-list li,
+  .legal-info-section p {
+    font-size: 14px;
+  }
+}
