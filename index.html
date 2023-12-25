@@ -8,19 +8,11 @@
   </head>
   <body>
 
-  <div id="usernamePopup" class="username-popup">
-    <div class="username-content">
-      <h2>Welcome!</h2>
-      <p>Please enter your username to continue:</p>
-      <input type="text" id="usernameInput" placeholder="Username">
-      <button id="submitUsername">Submit</button>
-    </div>
-  </div>
+ 
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'Description')">Description</button>
   <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
-  <button class="tablinks" onclick="openTab(event, 'Ratings')">Ratings</button>
   <button class="tablinks" onclick="openTab(event, 'Links')">Links</button>
 </div>
 
@@ -61,171 +53,22 @@
       </div>
     </div>
 
-  <div id="Ratings" class="tabcontent">
 
-    <h3 class="section-title">Ratings</h3>
 
-    <div class="rating-container" id="ratingContainer">
-      <!-- Sample initial ratings with random usernames -->
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Jakob One Shot</p>
-        <p>Excellent work!</p>
+
+    <div id="Links" class="tabcontent">
+      <h3 class="section-title">Useful Links</h3>
+      <div class="links-content">
+        <div class="link">
+          <a href="https://discord.gg/RhcKZADuF3" target="_blank" class="link-title">Join our Discord community</a>
+          <p class="link-description">Connect with fellow players and stay updated on the latest news and events in our Discord community.</p>
+        </div>
+        <div class="link">
+          <a href="https://www.meta.com/experiences/5621940601265859/" target="_blank" class="link-title">Explore our Meta Experience</a>
+          <p class="link-description">Dive into our virtual Meta Experience and discover exciting in-game content and features.</p>
+        </div>
       </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">That Gorilla Tag Kid</p>
-        <p>Great job!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">VR_enthusiast</p>
-        <p>Woah, mind-blown! Graphics are next level.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Arctic_Explorer</p>
-        <p>Feels like I'm really in the Arctic! Props to the team!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">GamerGal</p>
-        <p>Having a blast! Multiplayer rocks!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">PenguinPal</p>
-        <p>So much fun! Arctic theme is lit!</p>
-      </div>
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Tech_Wizard</p>
-        <p>VR is mind-blowing. Tech masterpiece!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-        <p class="username">AdventureSeeker</p>
-        <p>Loving the adventures! More levels, please!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Snow_Lover</p>
-        <p>Snowy landscapes are pure magic!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-        <p class="username">DigitalNomad</p>
-        <p>Great for socializing, UI needs a tweak.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Gaming_Guru</p>
-        <p>Controls are a breeze! Loving it!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Serene_Gamer</p>
-        <p>Chill and fun! Perfect relaxation.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Virtual_Voyager</p>
-        <p>Masterpiece! Attention to detail is crazy.</p>
-      </div>
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Pixel_Painter</p>
-        <p>Art style is lit! Like living in a painting.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Echo_Explorer</p>
-        <p>Sound design is out of this world!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-        <p class="username">Mystery_Gamer</p>
-        <p>Storylines got me hooked! Waiting for more!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Arctic_Fox</p>
-        <p>Races are a blast! Competitive yet fun.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-        <p class="username">Casual_Climber</p>
-        <p>Good game, but craving casual modes.</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">World_Traveler</p>
-        <p>Like traveling from my couch! Amazing environments!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Zen_Master</p>
-        <p>Excitement and relaxation in one! Perfect VR!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p class="username">Challenge_Craver</p>
-        <p>Addicted to the challenges! Can't stop playing!</p>
-      </div>
-
-      <div class="rating">
-        <span class="star">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-        <p class="username">Peaceful_Player</p>
-        <p>Great for unwinding! More peaceful scenes, please.</p>
-      </div>
-
-
-      <!-- Continue adding more as needed -->
-      <!-- Add more ratings with random usernames here -->
     </div>
-    <div class="add-rating">
-      <select id="ratingStars">
-        <option value="1">1 Star</option>
-        <option value="2">2 Stars</option>
-        <option value="3">3 Stars</option>
-        <option value="4">4 Stars</option>
-        <option value="5">5 Stars</option>
-      </select>
-      <textarea id="ratingText" placeholder="Enter your review here"></textarea>
-      <button id="addRatingButton">Add Rating</button>
-    </div>
-  </div>
-
-
-  <div id="Links" class="tabcontent">
-    <h3 class="section-title">Useful Links</h3>
-    <div class="links-content">
-      <p class="link">
-        <a href="https://discord.gg/RhcKZADuF3" target="_blank">Join our Discord community</a>
-      </p>
-      <p class="link">
-        <a href="https://www.meta.com/experiences/5621940601265859/" target="_blank">Explore our Meta Experience</a>
-      </p>
-    </div>
-  </div>
 
 <script src="script.js"></script>
 </body>
