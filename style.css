@@ -1,4 +1,413 @@
+
+/* Do this for all other elements where font-size is defined */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f7ff;
+  color: #333;
+  font-size: 22px; /* Significantly increased base font size */
+}
+
+/* Tab Bar Styles */
+.tab {
+  overflow: hidden;
+  background-color: #4a90e2;
+  border-bottom: 2px solid #327ab7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 18px; /* Adjusted padding */
+  transition: 0.3s;
+  font-size: 20px; /* Increased font size */
+  color: #fff;
+}
+
+.tab button:hover {
+  background-color: #327ab7;
+}
+
+.tab button.active {
+  background-color: #205784;
+}
+
+/* Tab Content Styles */
+.tabcontent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+/* Keyframes for Snowflake Falling Animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* Snowflake Style with Animation */
+.snowflake {
+  position: fixed; /* Set the position to fixed */
+  top: 0; /* Adjust the initial position */
+  left: 50%; /* Center horizontally */
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1em;
+  user-select: none;
+  animation: fall 5s linear infinite; /* Use the "fall" animation for snowflakes */
+}
+
+
+/* Section Title Styles */
+.section-title {
+  font-size: 38px; /* Further increased font size */
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Description Content Styles */
+.description-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Title */
+.game-title {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Introduction Paragraph */
+.intro-paragraph, .feature-description, .conclusion-paragraph {
+  font-size: 22px; /* Increased font size */
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Feature Titles */
+.feature-title {
+  font-size: 28px; /* Increased font size */
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+/* Feature Descriptions */
+.feature-description {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Conclusion Paragraph */
+.conclusion-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Gallery Styles */
+#Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  flex: 1;
+  max-width: calc(25% - 10px);
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+/* Links Styles */
+#Links .section-title {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  background-color: #f4f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link-title {
+  font-size: 24px;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-title:hover {
+  color: #327ab7;
+}
+
+.link-description {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Additional Styles */
+/* ... add other styles here ... */
 /* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+/* Tab Bar Styles */
+.tab {
+  overflow: hidden;
+  background-color: #4a90e2;
+  border-bottom: 2px solid #327ab7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #fff;
+}
+
+.tab button:hover {
+  background-color: #327ab7;
+}
+
+.tab button.active {
+  background-color: #205784;
+}
+
+/* Tab Content Styles */
+.tabcontent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Removed overflow-y: scroll; */
+}
+
+/* Snowflake Styles */
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Snowflake styles */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) translateX(0) rotate(360deg);
+  }
+}
+
+.snowflake {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1em;
+  user-select: none;
+  animation: fall 5s linear infinite;
+  pointer-events: none; /* Prevent snowflakes from affecting clicks */
+}
+
+/* Ensure snowflakes stay away from the sides */
+@media (min-width: 768px) {
+  .snowflake {
+    left: calc(50% - 768px / 2); /* Adjust for your desired content width */
+  }
+}
+
+/* Additional styles for small screens */
+@media (max-width: 767px) {
+  /* Add any specific styles for small screens here */
+}
+
+
+/* Section Title Styles */
+.section-title {
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Description Content Styles */
+.description-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Title */
+.game-title {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/* Introduction Paragraph */
+.intro-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Feature Titles */
+.feature-title {
+  font-size: 24px;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+/* Feature Descriptions */
+.feature-description {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Conclusion Paragraph */
+.conclusion-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Gallery Styles */
+#Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  flex: 1;
+  max-width: calc(25% - 10px);
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+/* Links Styles */
+/* Style for the Links tab content */
+/* Style for the Links tab content */
+#Links .links-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for individual links */
+/* Style for individual links */
+.link {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px; /* Add padding for better spacing */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Make the whole button rounded */
+  background-color: #4a90e2; /* Button background color */
+  color: #fff; /* Text color */
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block; /* Display links as inline-block to fit content */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Change cursor to pointer to indicate it's a clickable link */
+}
+
+.link:hover {
+  background-color: #327ab7; /* Change background color on hover */
+  transform: translateY(-3px); /* Add a slight lift effect on hover */
+}
+
+/* Style for link titles */
+.link-title {
+  font-size: 24px;
+  color: #fff; /* Text color for link titles */
+  text-decoration: none; /* Remove underline from link titles */
+  transition: color 0.3s;
+}
+
+.link-title:hover {
+  color: #fff; /* Change text color on hover */
+}
+
+/* Style for link descriptions */
+.link-description {
+  font-size: 18px;
+  color: #fff; /* Text color for link descriptions */
+  line-height: 1.5;
+  margin-top: 10px;
+  text-decoration: none; /* Remove underline from link descriptions */
+}/* Reset and Basic Styles */
 * {
   margin: 0;
   padding: 0;
@@ -404,4 +813,109 @@ html, body {
   line-height: 1.5;
   margin-top: 10px;
   text-decoration: none; /* Remove underline from link descriptions */
+}
+/* ... existing CSS code ... */
+
+/* Information Content Styles */
+.information-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 24px; /* Adjust the size as needed */
+  color: #4a90e2; /* Change the color to match other headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tos-list, .legal-info-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tos-list li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.legal-info-section {
+  border-top: 2px solid #4a90e2;
+  padding-top: 15px;
+}
+
+/* Optional: Add a hover effect for list items */
+.tos-list li:hover {
+  color: #205784;
+  cursor: pointer;
+}
+
+/* Responsive design considerations */
+@media (max-width: 600px) {
+  .information-content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .tos-list li, .legal-info-section p {
+    font-size: 16px;
+  }
+}
+#Links .section-title, #Information .section-title {
+  font-size: 24px;
+  color: #4a90e2;
+  /* Any other styles you wish to ensure consistency */
+}
+.section-title {
+    padding: 20px;
+}
+/* Style for individual links */
+.link {
+  display: flex; /* Using flex to align the items */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  width: 100%; /* Set a standard width for all links */
+  margin-bottom: 20px; /* Spacing between each link */
+}
+
+.link a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+  width: 100%; /* Ensure the link spans the entire width of the container */
+}
+
+.link-title, .link-description {
+  display: block; /* Make these elements block-level for consistent sizing */
+  padding: 10px; /* Add padding for better visual appearance */
+  background-color: #4a90e2; /* Background color for the link */
+  color: white; /* Text color */
+  border-radius: 5px; /* Optional: round the corners */
+  width: 100%; /* Ensure these elements span the entire width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 0; /* Remove any default margin */
+}
+
+.link-title {
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: make the title bold */
+}
+
+.link-description {
+  font-size: 15px; /* Adjust font size as needed */
+}
+
+/* Adjustments for hover effects */
+.link a:hover .link-title {
+  background-color: #327ab7; /* Change background color on hover */
 }
